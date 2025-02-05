@@ -1,0 +1,14 @@
+nextjs의 router 너무 간단하다!!
+    - 폴더를 만든다
+    - 끝
+
+404페이지도 지원한다
+    - not-found.tsx
+
+use Client ?
+    - client에서 rendering 하겠다는 의미
+
+nextjs 작동 순서
+    server(backend) 에서 pre-render -> HTMl 보여주기 -> interactive 하게 만들기
+                                                        ( useClient 로 일부만 만듦)        
+SSR 과 CSR을 섞어서 사용 
