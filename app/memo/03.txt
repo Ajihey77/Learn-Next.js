@@ -1,0 +1,4 @@
+우리가 원래 하던 방식 - client side
+nextjs - server component - server side
+    useEffect , useState 사용 X
+    server component에 fetch를 정의한다.
