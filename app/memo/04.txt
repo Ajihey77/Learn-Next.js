@@ -1,0 +1,24 @@
+loading
+    - loading 컴포넌트를 만들면 자동으로 처리를해주는 놀라운 next!!
+    - server component에서 data를 fetch해올때 시간이 지연되면 자동으로 loading컴포넌트를 호출
+    - fetch가 완료되면 await 된 화면에 보여줄 컴포넌트를 보여준다.
+
+최적화
+    1. Promise.all 을 통한 fetch 최적화
+    2. Suspense 
+        - suspense를 통해 fetch를 병렬적으로 처리하면서,
+        - 데이터 완료 시점에 따라 화면에 표출할 수 있음
+        - 로딩상태를 개별적으로 설정할 수 있음
+        - 서버에서 fetch 와 loading상태 처리를 맡아줌 ---> client 역할이 넘어감
+
+캐싱    
+    : fetch시 별도의 설정을 통해 api에대해 캐싱을 설정할 수 있음  
+        { cache: "force-cache" }
+
+error
+    : 이 또한 error.tsx 를 만들면 error시 자동 error 처리가 됨
+        1. 전체적인 처리
+            - error.tsx page root에 만들기
+        2. 개별적인 처리
+            - Suspense 와 errorBoundary 같이 사용
+            

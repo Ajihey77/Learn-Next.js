@@ -1,4 +1,8 @@
-우리가 원래 하던 방식 - client side
-nextjs - server component - server side
-    useEffect , useState 사용 X
-    server component에 fetch를 정의한다.
+우리가 원래 하던 방식
+    client side
+nextjs
+    - server component - server side
+    - 스트리밍 방식 : 데이터를 조금씩 순차적으로 받아서 처리하는 방식.
+    - useEffect , useState 사용 X
+    - server component에 fetch를 정의한다.
+    - compnent 사용시 async 해야함
